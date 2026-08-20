@@ -1,6 +1,7 @@
 import { Avatar, Button, Card, CardContent, Typography } from "@mui/material";
 import headshot from "../../images/headshot.jpg";
 import Break from "../../components/Break/Break";
+import Carousel from "../../components/Carousel/Carousel";
 
 export const section =
   "flex flex-col justify-start items-center gap-8 w-full lg:w-4/5 mx-auto";
@@ -8,7 +9,7 @@ export const section =
 const Home = () => {
   return (
     <div className={section}>
-      <div className="flex flex-row gap-8 w-full">
+      <div className="flex flex-col sm:flex-row gap-8 w-full items-center">
         <Avatar
           className="!w-1/2 !max-w-[500px] !h-auto"
           alt="Alyssa Tripp Photo"
@@ -40,7 +41,7 @@ const Home = () => {
 
       <Break />
 
-      <div className="flex flex-row gap-8 w-full">
+      <div className="flex flex-col sm:flex-row gap-8 w-full">
         <Card className="!bg-fern !rounded-lg flex-1">
           <CardContent>
             <Typography
@@ -94,6 +95,8 @@ const Home = () => {
         >
           About Me
         </Typography>
+
+        <Carousel />
       </div>
     </div>
   );

@@ -33,9 +33,9 @@ function App() {
     <ThemeProvider theme={theme}>
       <div className="App flex flex-col h-screen">
         {/* NAV BAR SECTION */}
-        <div className="bg-midnight-violet p-5 flex flex-row justify-between">
+        <div className="bg-midnight-violet p-5 flex flex-col justify-between sm:flex-row  sm:items-center sm:justify-between gap-6">
           <h1 className="text-apricot-cream text-3xl"> Alyssa Tripp</h1>
-          <div className="flex flex-row justify-end gap-3">
+          <div className="flex flex-row justify-center items-center gap-3 w-full sm:w-auto">
             {tabs.map((tab) => (
               <Button
                 className="text-apricot-cream"
