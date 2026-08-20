@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./App.css";
-import { Button, ThemeProvider } from "@mui/material";
+import { Button, ThemeProvider, Typography } from "@mui/material";
 import theme from "./theme";
 import Home from "./pages/Home/Home";
 import Education from "./pages/Education/Education";
@@ -54,6 +54,38 @@ function App() {
         {/* CONTENT */}
         <div className="p-10 text-midnight-violet bg-apricot-cream flex flex-1">
           {renderTab()}
+        </div>
+
+        {/* Footer */}
+        <div className="bg-midnight-violet p-5 flex flex-col justify-between sm:flex-row sm:items-center sm:justify-between gap-6">
+          <div className="flex flex-col">
+            <Typography className="text-apricot-cream text-start">
+              Alyssa Tripp
+            </Typography>
+            <Typography className="text-apricot-cream text-start">
+              Created using React and Typescript on 08/20/2026
+            </Typography>
+          </div>
+
+          <div className="flex flex-col sm:flex-row sm:gap-3">
+            <Button
+              variant="outlined"
+              color="secondary"
+              component="a"
+              download
+              href="/RESUME.pdf"
+            >
+              Download Resume
+            </Button>
+            <Button
+              variant="outlined"
+              color="secondary"
+              component="a"
+              href="mailto:alyssajvangorkom@gmail.com"
+            >
+              Contact Me
+            </Button>
+          </div>
         </div>
       </div>
     </ThemeProvider>
