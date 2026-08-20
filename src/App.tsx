@@ -67,7 +67,7 @@ function App() {
             </Typography>
           </div>
 
-          <div className="flex flex-col sm:flex-row sm:gap-3">
+          <div className="flex flex-col sm:flex-row gap-3">
             <Button
               variant="outlined"
               color="secondary"

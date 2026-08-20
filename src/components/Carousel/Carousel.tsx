@@ -1,5 +1,5 @@
 import { Card, CardContent, IconButton, Typography } from "@mui/material";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { ChevronLeft, ChevronRight } from "@mui/icons-material";
 import outdoors from "../../images/outdoors.jpg";
 import marriage from "../../images/marriage.jpg";
@@ -37,6 +37,13 @@ const funFacts = [
 
 const Carousel = () => {
   const [current, setCurrent] = useState(0);
+
+  useEffect(() => {
+    funFacts.forEach((fact) => {
+      const img = new Image();
+      img.src = fact.image;
+    });
+  }, []);
 
   const nextSlide = () => {
     setCurrent((prev) => (prev + 1) % funFacts.length);
