@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/AlyssasSite/static/css/main.f88af7e4.css",
-    "main.js": "/AlyssasSite/static/js/main.0215efb9.js",
+    "main.css": "/AlyssasSite/static/css/main.55aafcaf.css",
+    "main.js": "/AlyssasSite/static/js/main.9238bb9b.js",
     "static/js/453.722db8e8.chunk.js": "/AlyssasSite/static/js/453.722db8e8.chunk.js",
     "static/media/outdoors.jpg": "/AlyssasSite/static/media/outdoors.b1b41dd6c9dbe0ad38df.jpg",
     "static/media/beach.jpg": "/AlyssasSite/static/media/beach.7ca4a8f4bbf4d101dafe.jpg",
@@ -11,12 +11,12 @@
     "static/media/br.png": "/AlyssasSite/static/media/br.e205e4d94a83262b36c5.png",
     "static/media/music.jpg": "/AlyssasSite/static/media/music.1b7399737c909c065290.jpg",
     "index.html": "/AlyssasSite/index.html",
-    "main.f88af7e4.css.map": "/AlyssasSite/static/css/main.f88af7e4.css.map",
-    "main.0215efb9.js.map": "/AlyssasSite/static/js/main.0215efb9.js.map",
+    "main.55aafcaf.css.map": "/AlyssasSite/static/css/main.55aafcaf.css.map",
+    "main.9238bb9b.js.map": "/AlyssasSite/static/js/main.9238bb9b.js.map",
     "453.722db8e8.chunk.js.map": "/AlyssasSite/static/js/453.722db8e8.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f88af7e4.css",
-    "static/js/main.0215efb9.js"
+    "static/css/main.55aafcaf.css",
+    "static/js/main.9238bb9b.js"
   ]
 }
