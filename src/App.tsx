@@ -52,7 +52,7 @@ function App() {
           </div>
         </div>
         {/* CONTENT */}
-        <div className="App-header text-midnight-violet bg-apricot-cream flex flex-1">
+        <div className="p-10 text-midnight-violet bg-apricot-cream flex flex-1">
           {renderTab()}
         </div>
       </div>
