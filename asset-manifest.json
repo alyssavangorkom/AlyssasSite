@@ -1,16 +1,15 @@
 {
   "files": {
     "main.css": "/github.io/AlyssasSite/static/css/main.f855e6bc.css",
-    "main.js": "/github.io/AlyssasSite/static/js/main.87e8ee31.js",
+    "main.js": "/github.io/AlyssasSite/static/js/main.4a4de403.js",
     "static/js/453.722db8e8.chunk.js": "/github.io/AlyssasSite/static/js/453.722db8e8.chunk.js",
-    "static/media/logo.svg": "/github.io/AlyssasSite/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/github.io/AlyssasSite/index.html",
     "main.f855e6bc.css.map": "/github.io/AlyssasSite/static/css/main.f855e6bc.css.map",
-    "main.87e8ee31.js.map": "/github.io/AlyssasSite/static/js/main.87e8ee31.js.map",
+    "main.4a4de403.js.map": "/github.io/AlyssasSite/static/js/main.4a4de403.js.map",
     "453.722db8e8.chunk.js.map": "/github.io/AlyssasSite/static/js/453.722db8e8.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f855e6bc.css",
-    "static/js/main.87e8ee31.js"
+    "static/js/main.4a4de403.js"
   ]
 }
