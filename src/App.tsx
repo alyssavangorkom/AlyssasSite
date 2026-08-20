@@ -2,6 +2,9 @@ import React, { useState } from "react";
 import "./App.css";
 import { Button, ThemeProvider } from "@mui/material";
 import theme from "./theme";
+import Home from "./pages/Home/Home";
+import Education from "./pages/Education/Education";
+import Experience from "./pages/Experience/Experience";
 
 const tabs = [
   { id: "home", label: "Home" },
@@ -10,7 +13,21 @@ const tabs = [
 ];
 
 function App() {
-  const [current, setCurrent] = useState("home");
+  const params = new URLSearchParams(window.location.search);
+  const [current, setCurrent] = useState(params.get("tab") || "home");
+
+  function renderTab() {
+    switch (current) {
+      case "home":
+        return <Home />;
+      case "edu":
+        return <Education />;
+      case "exp":
+        return <Experience />;
+      default:
+        return <Home />;
+    }
+  }
 
   return (
     <ThemeProvider theme={theme}>
@@ -24,16 +41,20 @@ function App() {
                 className="text-apricot-cream"
                 variant="contained"
                 key={tab.id}
-                onClick={() => setCurrent(tab.id)}
+                onClick={() => {
+                  setCurrent(tab.id);
+                  window.history.pushState({}, "", `?tab=${tab.id}`);
+                }}
               >
                 {tab.label}
               </Button>
             ))}
           </div>
         </div>
-        <header className="App-header text-midnight-violet bg-apricot-cream flex flex-1">
-          <p>Under Construction!!!</p>
-        </header>
+        {/* CONTENT */}
+        <div className="App-header text-midnight-violet bg-apricot-cream flex flex-1">
+          {renderTab()}
+        </div>
       </div>
     </ThemeProvider>
   );
