@@ -1,7 +1,8 @@
-import { Avatar, Button, Card, CardContent, Typography } from "@mui/material";
+import { Button, Typography } from "@mui/material";
 
-interface ExperienceCardProps {
-  background?: string;
+interface EducationCardProps {
+  major?: string;
+  gpa: string;
   title: string;
   date: string;
   logo: string;
@@ -9,20 +10,21 @@ interface ExperienceCardProps {
   link: string;
 }
 
-const ExperienceCard = ({
-  background,
+const EducationCard = ({
+  major,
+  gpa,
   title,
   date,
   logo,
   description,
   link,
-}: ExperienceCardProps) => {
+}: EducationCardProps) => {
   return (
     <div className="w-full flex flex-col sm:flex-row sm:gap-0 gap-4 justify-start p-5 rounded-lg border-4 border-fern">
       <div className="flex flex-1 flex-col h-full w-full justify-center gap-6 items-center">
         <img
-          className={`!w-1/3 !h-auto !z-0 rounded-md ${background}`}
-          alt="Company Logo"
+          className={`!w-1/3 !h-auto !z-0 rounded-md`}
+          alt="School Logo"
           src={logo}
         />
         <Typography
@@ -35,11 +37,27 @@ const ExperienceCard = ({
           {date}
         </Typography>
         <Button className="w-[80%] " target="_blank" href={link}>
-          Visit Project
+          Visit School Website
         </Button>
       </div>
       <div className="flex flex-1 flex-col h-full justify-center">
-        <Typography variant="body1" className="text-midnight-violet text-left">
+        <Typography
+          variant="h5"
+          className="text-left text-rosewood !font-black"
+        >
+          {major}
+        </Typography>
+        <Typography
+          variant="h5"
+          className="text-left text-midnight-violet !font-black"
+        >
+          {gpa} GPA
+        </Typography>
+
+        <Typography
+          variant="body1"
+          className="text-midnight-violet text-left !mt-6"
+        >
           {description}
         </Typography>
       </div>
@@ -47,4 +65,4 @@ const ExperienceCard = ({
   );
 };
 
-export default ExperienceCard;
+export default EducationCard;
