@@ -9,9 +9,9 @@ export const section =
 const Home = () => {
   return (
     <div className={section}>
-      <div className="flex flex-col sm:flex-row gap-8 w-full items-center">
+      <div className="flex flex-col z-0 sm:flex-row gap-8 w-full items-center">
         <Avatar
-          className="!w-1/2 !max-w-[500px] !h-auto"
+          className="!w-1/2 !max-w-[500px] !h-auto !z-0"
           alt="Alyssa Tripp Photo"
           src={headshot}
         />
